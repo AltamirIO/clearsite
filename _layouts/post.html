@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="container mt-3 mb-2">
+  <div class="row justify-content-center">
+    <div class="col col-md-10 col-lg-8">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+</div>
+
+{% if page.image and page.image != "" and page.image != null %}
+<div class="container mb-3">
+  <div class="row justify-content-center">
+    <div class="col col-md-10 col-lg-8">
+        <img src="{{ page.image }}" class="img-fluid rounded" alt="{{ page.image_alt }}">
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="container">
+  <div class="row mb-3 justify-content-center">
+    <div class="col col-md-10 col-lg-8">
+      <p id="postMeta" class="text-muted text-uppercase">
+        <b>
+          {% if page.author and page.author != "" and page.author != null %}{{ page.author }} | {% endif %}
+          {{ page.date | date: "%B %-d, %Y" }}
+        </b>
+      </p>
+      {% if page.description and page.description != "" and page.description != null %}
+        <p class="lead">{{ page.description }}</p>
+        <hr>
+      {% endif %}
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>

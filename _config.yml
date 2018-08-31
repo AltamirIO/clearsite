@@ -1,0 +1,44 @@
+title: Prometheus Consulting
+email: hello@gopromethe.us
+description: >-
+  We build apps.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  PrometheusConsulting
+permalink: /blog/:title
+separator: "–"
+navbar_logo_filename:
+google_analytics_id:
+default_image:
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "" # Default site image for Open Graph
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

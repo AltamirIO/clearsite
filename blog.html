@@ -1,0 +1,68 @@
+---
+layout: page
+title: Blog
+permalink: /blog
+---
+<div class="container">
+<div class="row my-5 justify-content-center">
+  <div class="col text-center">
+    <h1>Blog</h1>
+    <p class="lead">Get smart.</p>
+  </div><!-- /.col text-center -->
+</div><!-- /.row my-5 justify-content-center -->
+</div><!-- /.container -->
+
+<div class="container">
+  <div class="row mb-4 justify-content-center">
+    <div class="col">
+      {% for post in site.posts limit:1 %}
+        <div class="jumbotron p-3 p-md-5 text-white rounded" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('{{ post.image }}');background-position:center;background-repeat:no-repeat;background-size:cover">
+          <div class="col-md-6">
+            <h2><a href="{{ post.url }}" class="text-white">{{ post.title }}</a></h2>
+            <p class="lead">{{ post.description }}</p>
+            <p class="text-uppercase"><small>{{ post.date | date: "%B %-d, %Y" }}</small></p>
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.jumbotron p-3 p-md-5 text-white rounded -->
+      {% endfor %}
+    </div><!-- /.col -->
+  </div><!-- /.row mb-4 justify-content-center -->
+</div><!-- /.container -->
+
+<div class="container">
+  <div class="row mb-4 justify-content-center">
+    <div class="col-md-8">
+      {% for post in site.posts offset:1 %}
+        <h3><a href="{{ post.url }}" class="text-body">{{ post.title }}</a></h3>
+        <p class="text-muted text-uppercase">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid rounded">
+        <p>{{ post.excerpt }}</p>
+        <p><a href="{{ post.url }}">Continue reading...</a></p>
+        <hr class="my-4">
+      {% endfor %}
+    </div><!-- /.col-md-8 -->
+    <div class="col-md-4">
+      <p><a href="/feed.xml" target="_blank">Subscribe via RSS</a></p>
+    </div><!-- /.col-md-4 -->
+  </div><!-- /.row mb-4 justify-content-center -->
+</div><!-- /.container -->
+
+<!-- <div class="container">
+  <div class="row mb-4">
+    <div class="col">
+      <div class="card-columns">
+        {% for post in site.posts offset:1 %}
+          <div class="card mb-4 shadow border-0">
+            {% if post.image and post.image != "" and post.image != null %}
+            <a href="{{ post.url }}"><img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}"></a>
+            {% endif %}
+            <div class="card-body">
+              <h4 class="mb-3 card-title"><a href="{{ post.url }}" class="text-body">{{ post.title }}</a></h4>
+              <p class="text-muted text-uppercase">{{ post.date | date: "%B %-d, %Y" }}</p>
+              <p>{{ post.description }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div> -->

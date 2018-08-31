@@ -1,0 +1,29 @@
+<footer class="py-5 mt-0 bg-light text-center">
+    <ul class="nav justify-content-center mb-2">
+      <li class="nav-item">
+        <a href="/" class="nav-link{% if page.url == '/' %} active{% endif %}">Home</a>
+      </li><!-- /.nav-item -->
+
+      <li class="nav-item">
+        <a href="/blog" class="nav-link{% if page.url == '/blog' %} active{% endif %}">Blog</a>
+      </li><!-- /.nav-item -->
+    </ul>
+
+    <p class="mb-3 text-secondary">
+      &copy;{{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
+    </p>
+
+    <ul id="social-icons" class="nav justify-content-center">
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/company/prometheus-software-consulting/" target="_blank" class="nav-link text-secondary"><i class="fab fa-lg fa-linkedin"></i></a>
+      </li><!-- /.nav-item -->
+
+      <li class="nav-item">
+        <a href="https://www.facebook.com/prometheusconsulting/" target="_blank" class="nav-link text-secondary"><i class="fab fa-lg fa-facebook"></i></a>
+      </li><!-- /.nav-item -->
+
+      <li class="nav-item">
+        <a href="https://www.instagram.com/prometheusconsulting/" target="_blank" class="nav-link text-secondary"><i class="fab fa-lg fa-instagram"></i></a>
+      </li><!-- /.nav-item -->
+    </ul><!-- /#social-icons.nav justify-content-center -->
+  </footer>
