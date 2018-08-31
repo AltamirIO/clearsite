@@ -1,10 +1,11 @@
-title: Prometheus Consulting
+title: Prometheus Software
 email: hello@gopromethe.us
 description: >-
   We build apps.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  PrometheusConsulting
+linkedin_company_id: 18642872
 permalink: /blog/:title
 separator: "–"
 navbar_logo_filename:
