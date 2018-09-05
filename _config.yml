@@ -8,16 +8,16 @@ github_username:  PrometheusConsulting
 linkedin_company_id: 18642872
 permalink: /blog/:title
 separator: "–"
-navbar_logo_filename:
+navbar_logo_filename: prometheus.svg
 google_analytics_id:
-default_image:
+default_image: /assets/img/prometheus-logo.png
 
 defaults:
   -
     scope:
       path: ""
     values:
-      image: "" # Default site image for Open Graph
+      image: "/assets/img/prometheus-logo.png" # Default site image for Open Graph
   -
     scope:
       path: "assets/img"
