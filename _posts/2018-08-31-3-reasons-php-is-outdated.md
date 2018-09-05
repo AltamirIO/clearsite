@@ -5,9 +5,9 @@ date: 2018-08-31 09:35 -0600
 author: Jacob Dick
 description: PHP is a popular and widely-supported server language. Is it time to pull the plug on it?
 ---
-My first journey into web development beyond HTML was with a SaaS company running a PHP app. I may be biased, since the app was written with CodeIgniter, but I wasn't impressed with the speed or scalability of this app as we grew our user base.
+My first journey into web development beyond HTML was with a SaaS company running a PHP app. I may be biased, since the app was written with CodeIgniter, but I wasn’t impressed with the speed or scalability of this app as we grew our user base.
 
-PHP has some inherent problems that aren't going away.
+PHP has some inherent problems that aren’t going away.
 
 ## PHP is synchronous
 
