@@ -1,0 +1,21 @@
+{
+  "name": "clearsite",
+  "version": "1.0.0",
+  "description": "The Prometheus Consulting homepage.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrometheusConsulting/clearsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrometheusConsulting/clearsite/issues"
+  },
+  "homepage": "https://github.com/PrometheusConsulting/clearsite#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
